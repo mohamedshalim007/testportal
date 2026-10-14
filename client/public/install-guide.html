@@ -1,0 +1,231 @@
+<!-- client/public/install-guide.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMC Compiler - Installation Guide</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #1a2a4a;
+            background: #f8fafc;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: #1a2a4a;
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 16px 20px;
+            margin: 12px 0;
+            border-radius: 10px;
+            border-left: 4px solid #3758f9;
+        }
+        .step-number {
+            display: inline-block;
+            background: #3758f9;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #28a745;
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #3758f9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #1a3fd9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(55, 88, 249, 0.35);
+        }
+        .btn-success {
+            background: #28a745;
+        }
+        .btn-success:hover {
+            background: #218838;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin: 8px 0;
+        }
+        li {
+            margin: 4px 0;
+        }
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 14px;
+            text-align: center;
+        }
+        .icon {
+            font-size: 24px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .step {
+                padding: 12px 16px;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="icon">🚀</span>
+            JMC Compiler Service
+        </h1>
+        <p style="color: #4a5c80; font-size: 18px;">Installation Guide for Students</p>
+
+        <div class="warning">
+            <strong>⚠️ Important:</strong> This installation requires <strong>administrator privileges</strong>.
+            You only need to install this <strong>once</strong> on your computer.
+        </div>
+
+        <div class="success">
+            <strong>✅ One-time setup:</strong> After installation, the compiler will start automatically
+            whenever you visit the exam portal.
+        </div>
+
+        <h2>📋 Installation Steps</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Download the installer</strong>
+            <p style="margin-top: 6px;">Click the button below to download the compiler service installer:</p>
+            <div style="margin-top: 10px;">
+                <a href="/downloads/JMCCompilerSetup.exe" class="btn btn-success" download>
+                    📥 Download JMCCompilerSetup.exe
+                </a>
+            </div>
+            <p style="font-size: 13px; color: #6b7280; margin-top: 6px;">
+                File size: ~5MB · Version: 1.0.0
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Run the installer</strong>
+            <ol>
+                <li>Double-click <code>JMCCompilerSetup.exe</code> to start installation</li>
+                <li>If Windows shows a security warning, click <strong>"Run anyway"</strong></li>
+                <li>You may see a <strong>User Account Control (UAC)</strong> prompt - click <strong>"Yes"</strong></li>
+                <li>Follow the on-screen instructions</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>Service starts automatically</strong>
+            <p>The compiler service will start automatically after installation.</p>
+            <p style="font-size: 14px; color: #4a5c80; margin-top: 4px;">
+                ✅ You can verify it's running by visiting: <code>http://localhost:5001/health</code>
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">4</span>
+            <strong>Start coding!</strong>
+            <p>Return to the exam page and start writing and running code.</p>
+            <ul>
+                <li>Select your programming language</li>
+                <li>Write your code in the editor</li>
+                <li>Click <strong>"Run Code"</strong> to execute</li>
+                <li>View output in the terminal</li>
+            </ul>
+        </div>
+
+        <h2>💡 Troubleshooting</h2>
+        <ul>
+            <li><strong>Service not starting:</strong> Restart your computer and try again</li>
+            <li><strong>Port 5001 in use:</strong> Check if another application is using port 5001</li>
+            <li><strong>Permission denied:</strong> Make sure you ran the installer as administrator</li>
+            <li><strong>Firewall blocking:</strong> Allow the service through Windows Firewall</li>
+        </ul>
+
+        <h2>🔧 Manual Commands (Advanced)</h2>
+        <p style="font-size: 14px; color: #4a5c80;">Run these in Command Prompt as Administrator:</p>
+        <ul>
+            <li><strong>Start service:</strong> <code>sc start JMCCompiler</code></li>
+            <li><strong>Stop service:</strong> <code>sc stop JMCCompiler</code></li>
+            <li><strong>Check status:</strong> <code>sc query JMCCompiler</code></li>
+            <li><strong>Uninstall:</strong> <code>sc stop JMCCompiler &amp; sc delete JMCCompiler</code></li>
+        </ul>
+
+        <div style="margin-top: 24px; padding: 16px; background: #e3f2fd; border-radius: 8px;">
+            <strong>📞 Need help?</strong>
+            <p style="margin: 4px 0 0; font-size: 14px;">Contact your exam coordinator or IT support.</p>
+        </div>
+
+        <div class="footer">
+            JMC Compiler Service v1.0.0 · © 2024 JMC Education
+        </div>
+    </div>
+</body>
+</html>

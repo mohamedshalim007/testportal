@@ -1,0 +1,4 @@
+D:\testcomplier\full_project\compiler-service\publish\appsettings.json
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.pdb
+D:\testcomplier\full_project\compiler-service\publish\aspnetcorev2_inprocess.dll
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.exe

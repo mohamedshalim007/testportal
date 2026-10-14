@@ -1,0 +1,29 @@
+{
+  "name": "exam-portal-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Exam Portal Backend with Department & Pattern Management",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "@vladmandic/face-api": "^1.7.15",
+    "archiver": "^8.0.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "mysql2": "^3.22.6",
+    "node-pty": "^1.1.0",
+    "uuid": "^13.0.0",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^8.0.0",
+    "nodemon": "^3.1.14"
+  }
+}

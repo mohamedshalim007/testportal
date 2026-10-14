@@ -1,0 +1,9 @@
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.exe
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.dll
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.deps.json
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.runtimeconfig.json
+D:\testcomplier\full_project\compiler-service\publish\CompilerService.pdb
+D:\testcomplier\full_project\compiler-service\publish\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\testcomplier\full_project\compiler-service\publish\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\testcomplier\full_project\compiler-service\publish\Microsoft.Extensions.Hosting.dll
+D:\testcomplier\full_project\compiler-service\publish\Newtonsoft.Json.dll
